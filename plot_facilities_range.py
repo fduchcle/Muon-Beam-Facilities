@@ -10,14 +10,14 @@ import matplotlib.lines as mlines
 # Load CSV file
 df = pd.read_csv("facilities_range.csv")
 
-# Define line styles for categories (black-and-white friendly)
+# Define line styles for categories
 category_styles = {
     "Material Science": {'color': 'black', 'linestyle': ':'},      # Dotted
     "Particle Physics": {'color': 'black', 'linestyle': '-'},     # Solid
     "Jefferson Lab": {'color': 'black', 'linestyle': '--'}          # Dashed
 }
 
-# Define facility order for consistent y-axis placement
+# Define facility order 
 lab_order = ["TRIUMF", "PSI", "J-PARC", "ISIS RIKEN", "MuSIC", "CERN", "FERMILAB", "JLAB/BDX"]
 spacing = 0.2
 y_positions = {lab: i * spacing for i, lab in enumerate(reversed(lab_order))}
@@ -25,7 +25,7 @@ y_positions = {lab: i * spacing for i, lab in enumerate(reversed(lab_order))}
 # Create plot
 fig, ax = plt.subplots(figsize=(6, 4))
 
-# Plot horizontal bars with distinct line styles
+# Plot horizontal bars
 for _, row in df.iterrows():
     y = y_positions[row["facility"]]
     style = category_styles.get(row["category"], {'color': 'black', 'linestyle': '-'})
@@ -55,7 +55,7 @@ ax.grid(which='major', axis='both', linestyle='--', linewidth=0.7, alpha=0.7)
 # Title
 plt.title("Momentum Range of Muon Beam Facilities", fontsize=14)
 
-# Legend with line styles
+# Legend
 handles = [
     mlines.Line2D([], [], color=style['color'], linestyle=style['linestyle'], lw=2, label=cat)
     for cat, style in category_styles.items()
@@ -63,5 +63,5 @@ handles = [
 plt.legend(handles=handles, loc='upper right')
 
 plt.tight_layout()
-plt.savefig("facilities_range_bw.jpeg", dpi=300)
+plt.savefig("facilities_range_bw.png", dpi=300)
 plt.show()
