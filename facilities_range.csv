@@ -1,0 +1,9 @@
+﻿category,facility,min,max
+Material Science,TRIUMF,0.019,0.3
+Material Science,PSI,0.01,0.125
+Material Science,J-PARC,0.002,0.12
+Material Science,ISIS RIKEN,0.02,0.12
+Material Science,MuSIC,0.029,0.08
+Particle Physics,CERN,60,190
+Particle Physics,FERMILAB,3.01,3.01
+Jefferson Lab,JLAB/BDX,0.030015616,5.97001562
