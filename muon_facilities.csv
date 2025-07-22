@@ -10,15 +10,16 @@ Material Science,PSI,0.3,6.00E+07,cloud -
 Material Science,J-PARC MUSE,0.028,3.00E+07,+
 Material Science,J-PARC MUSE,0.06,1.00E+06,decay +/-
 Material Science,J-PARC MUSE,0.028,1.00E+07,+
-Material Science,J-PARC MUSE,0.001,1.00E+06,
+Material Science,J-PARC MUSE,0.001,1.00E+06,-
 Material Science,MuSIC,0.029,1.00E+05,+
 Material Science,MuSIC,0.06,2.00E+04,-
 Material Science,ISIS RIKEN/RAL muon facility,0.028,1.00E+06,+
-Material Science,ISIS RIKEN/RAL muon facility,0.060,4.00E+05,+
-Material Science,ISIS RIKEN/RAL muon facility,0.060,6.00E+04,-
+Material Science,ISIS RIKEN/RAL muon facility,0.06,4.00E+05,+
+Material Science,ISIS RIKEN/RAL muon facility,0.06,6.00E+04,-
 Material Science,ISIS RIKEN/RAL muon facility,0.027,1.50E+06,+
-Particle Physics,CERN,160,1.30E+07,
-Particle Physics,PSI,0.16,3.30E+06,+
+Particle Physics,CERN (N),160,1.30E+07,+/-
+Particle Physics,CERN (E),12,1.00E+06,+/-
+Particle Physics,PSI,0.16,3.30E+06,+/-
 Particle Physics,Fermilab,3.1,1.00E+07,+
 BDX @ Jefferson Lab,JLab/BDX,0.235,1.00E+08,
 BDX @ Jefferson Lab,JLab/BDX,0.030015616,7.20E+06,

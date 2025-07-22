@@ -57,7 +57,7 @@ if len(x_jlab) > 0:
     idx = min(50, len(x_jlab)-1)
     x = x_jlab[idx]
     y = y_jlab[idx]
-    ax.text(x * 1.8, y * 0.5, "JLab", fontsize=15)
+    ax.text(x * 0.4, y * 0.5, "JLab", fontsize=15)
     
 # Label Muon Types 
 
@@ -92,5 +92,5 @@ plt.title("Muon Beam Facilities", fontsize=20, pad=35)
 ax.legend(loc="upper center", bbox_to_anchor=(0.5, 1.1), ncol=3, fontsize=10, frameon=False)
 
 plt.tight_layout()
-plt.savefig("muon_facilities_plot.png", dpi=300)
+plt.savefig("muon_facilities_plot.jpeg", dpi=300)
 plt.show()
